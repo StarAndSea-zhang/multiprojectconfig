@@ -1,0 +1,173 @@
+/**
+主页
+ */
+main {
+  width: 100%;
+  min-height: calc(100vh + 100px);
+}
+
+.layout-cart {
+  position: relative;
+  margin: 0em auto;
+  padding: 5em 0;
+}
+
+.layout-cart .post {
+  position: relative;
+  margin: 50px auto;
+  width: 1200px;
+}
+
+.layout-cart .post a {
+  border-bottom: none;
+}
+
+.layout-cart .post>a {
+  position: relative;
+  width: 680px;
+  height: 440px;
+  display: inline-block;
+  overflow: hidden;
+  background: #fff;
+  z-index: 2;
+}
+
+.layout-cart .post>a img {
+  width: 100%;
+  height: 100%;
+}
+
+.layout-cart .post-text {
+  position: absolute;
+  top: 20px;
+  height: 398px;
+  width: 498px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  text-align: left;
+  z-index: 1;
+}
+
+.layout-cart .post:nth-child(odd) {
+  text-align: left;
+}
+
+.layout-cart .post:nth-child(even) {
+  text-align: right;
+}
+
+.layout-cart .post:nth-child(odd) .post-text {
+  left: 660px;
+}
+
+.layout-cart .post:nth-child(even) .post-text {
+  right: 660px;
+}
+
+.layout-cart .post-text .post-time {
+  color: #999;
+  font-size: 12px;
+  margin: 80px 0 0 80px;
+}
+
+.layout-cart .post-text .post-title {
+  font-family: Georgia, Times New Roman, Times, serif;
+  font-size: 1.2em;
+  font-weight: normal;
+  line-height: 1.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 10px 100px 0 80px;
+}
+
+.layout-cart .post-text .post-title a {
+  color: #333;
+}
+
+.layout-cart .post-text .post-content {
+  text-align: justify;
+  line-height: 2em;
+  color: #555;
+  word-spacing: 2px;
+  letter-spacing: 0px;
+  word-break: break-all;
+  border-bottom: 0px solid #eeeeee;
+  margin: 10px 100px 0 80px;
+}
+
+.layout-cart .post-text .post-meta {
+  position: absolute;
+  left: 80px;
+  bottom: 60px;
+  font-size: 12px;
+  color: #999;
+}
+
+.layout-pure {
+  /*For people who likes pure style*/
+  width: 60%;
+  height: auto;
+  margin: 0em auto;
+  padding: 5em 0;
+}
+
+.layout-pure .post {
+  width: 100%;
+  margin-bottom: 3.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.layout-pure .post a {
+  border-bottom: none;
+}
+
+.layout-pure .post>.post-text {
+  width: 100%;
+  opacity: 1;
+  padding: 0;
+  margin: 0;
+  display: block;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.layout-pure .post .post-text .post-title {
+  font-family: Georgia, Times New Roman, Times, serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: left;
+  min-height: 20px;
+  margin: 0 0 0.1em 0;
+  padding: 0 0 0.1em 0;
+  border-bottom: 0px solid #eeeeee;
+}
+
+.layout-pure .post .post-text .post-title a {
+  border-bottom: 0px;
+}
+
+.layout-pure .post .post-text .post-content {
+  text-align: justify;
+  line-height: 2em;
+  word-spacing: 2px;
+  word-break: break-all;
+}
+
+.layout-pure .post .post-text .post-meta {
+  min-height: 20px;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.layout-pure .post .post-text .post-meta span {
+  display: inline-block;
+}
+
+.layout-pure .post .post-text .post-meta span>i {
+  color: lightgray;
+}
+
+.layout-pure .post .post-text .post-meta .right {
+  float: right;
+}
